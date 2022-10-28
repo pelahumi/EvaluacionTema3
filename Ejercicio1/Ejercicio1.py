@@ -40,7 +40,7 @@ def torres_hanoi(discos):
         elif (cima2 < cima) and (cima2 > cima3):
             torre1.apilar(cima2)
             torre2.desapilar()
-        elif (cima3 < cima
+    return 
 
 
         
