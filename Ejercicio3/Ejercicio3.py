@@ -19,11 +19,7 @@ class Ejercito():
     
 
 
-n1 = Naves("Halcon milenario", 123, 3, 9)
 
-n2 = Naves("Estrella de la muerte", 13446, 3557, 3656)
 
-n1.listado()
-n2.listado()
 
 
