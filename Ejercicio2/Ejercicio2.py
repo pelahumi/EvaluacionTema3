@@ -22,6 +22,7 @@ def determinante(matriz):
         dp2 = dp2 + matriz[i][j]
     
     
+
     
 
     
