@@ -31,4 +31,18 @@ class Pila():
             return False
     
     def en_cima(self):
-        
+        if self.cima is not None:
+            return self.cima.info
+        else:
+            return None
+    
+    def barrido(self):
+        aux = Pila()
+        while (not self.pila_vacia()):
+            dato = self.desapilar()
+            print(dato)
+            aux.apilar(dato)
+        while (not aux.pila_vacia()):
+            dato = aux.desapilar()
+            self.apilar(dato)
+
