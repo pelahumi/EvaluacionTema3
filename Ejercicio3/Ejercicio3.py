@@ -45,6 +45,15 @@ class Ejercito():
             else:
                 print("No se ha encontrado la Estrella de la muerte")
         return naves
+    
+    def mayor_pasajeros(self, lista):
+        pasajeros = []
+        for i in lista:
+            pasajeros.append(i["Largo"])
+        pasajeros.sort(reverse=True)
+        max_pasaj = pasajeros[:4]
+        return max_pasaj
+        
                     
 
 
