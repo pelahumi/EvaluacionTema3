@@ -51,7 +51,7 @@ class Ejercito():
         for i in lista:
             pasajeros.append(i["Largo"])
         pasajeros.sort(reverse=True)
-        max_pasaj = pasajeros[:4]
+        max_pasaj = pasajeros[:5]
         return max_pasaj
         
                     

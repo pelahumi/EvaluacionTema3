@@ -21,6 +21,8 @@ if __name__ == "__main__":
     flota.listar(lanzadera.dict())
     flota.listar(reptador.dict())
 
+    print(flota.mayor_pasajeros(flota.naves))
+
 
 
 
