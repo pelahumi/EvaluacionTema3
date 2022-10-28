@@ -16,6 +16,18 @@ class Ejercito():
 
     def listar(self, nave):
         self.naves.append(nave)
+
+    def ordenar(self, lista):
+        nombres = []
+        for i in lista:
+            nombres.append(i["Nombre"])
+        nombres = sorted(nombres)
+        return nombres
+
+        
+
+
+        
     
 
 

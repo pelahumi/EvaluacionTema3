@@ -20,7 +20,8 @@ if __name__ == "__main__":
     flota.listar(at.dict())
     flota.listar(lanzadera.dict())
     flota.listar(reptador.dict())
-    print(flota.naves)
+
+    print(flota.ordenar(flota.naves))
 
 
 
