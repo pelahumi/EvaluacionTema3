@@ -2,9 +2,9 @@ from Pila import Pila
 
 #Creamos las tres torres de hanoi como objetos pila
 
-hanoi1 = Pila()
-hanoi2 = Pila()
-hanoi3 = Pila()
+hanoi1 = Pila("Torre 1")
+hanoi2 = Pila("Torre 2")
+hanoi3 = Pila("Torre 3")
 
 #Creamos una lista con 64 elementos 
 elementos = []
@@ -17,30 +17,21 @@ for i in range(long):
     hanoi1.apilar(elementos[long - i -1])
 
 #Ahora creamos el algoritmo que resolvera el problema
-def torres_hanoi(discos):
-    torre1 = hanoi1
-    torre2 = hanoi2
-    torre3 = hanoi3
 
-    cima = torre1.en_cima()
-    cima2 = torre2.en_cima()
-    cima3 = torre3.en_cima()
+def torres_hanoi(discos, torre1, torre2, torre3):
+
     if discos == 1:
-        print(torre1.en_cima(), "va a la torre 3")
+        print(torre1.en_cima(), "va a la ",torre3.nombre)
+        torre1.desapilar()
+        torre2.apilar(torre1.en_cima())
+        return
     else:
-        if (cima < cima2) or (cima2 is None):
-            torre2.apilar(cima)
-            torre1.desapilar()
-        elif (cima < cima3) or (cima3 is None):
-            torre3.apilar(cima)
-            torre1.desapilar()
-        elif (cima2 < cima3) and (cima2 > cima):
-            torre3.apilar(cima2)
-            torre2.desapilar()
-        elif (cima2 < cima) and (cima2 > cima3):
-            torre1.apilar(cima2)
-            torre2.desapilar()
-    return 
+        torres_hanoi(discos - 1, torre1, torre3, torre2)
+        torres_hanoi(discos - 1, torre2, torre3, torre1)
+
+torres_hanoi(3, hanoi1, hanoi2, hanoi3)
+
+
 
 
         
