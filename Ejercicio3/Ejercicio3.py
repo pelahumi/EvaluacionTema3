@@ -58,9 +58,35 @@ class Ejercito():
         tripulacion = []
         for i in lista:
             tripulacion.append(i["Tripulacion"])
-        sol = max(tripulacion)
-        return sol
+        for i in lista:
+            if i["Tripulacion"] == max(tripulacion):
+                return i["Nombre"]
+            else:
+                pass
+
+    def at(self, lista):
+        for i in lista:
+            if "AT" in i["Nombre"]:
+                return i
+            else:
+                pass
     
+    def seis_pasajeros(self, lista):
+        nave = []
+        for i in lista:
+            if i["Pasajeros"] >= 6:
+                nave.append(i)
+            else:
+                pass
+        return nave
+    
+    def mayor(self, lista):
+        
+
+
+        
+       
+
 
 
         

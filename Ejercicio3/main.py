@@ -2,7 +2,7 @@ from Ejercicio3 import Ejercito, Naves
 
 if __name__ == "__main__":
     halcon = Naves("Halcon milenario", 34, 4, 10)
-    estrella = Naves("Estrella de la muerte", 100000, 825.984, 1000000)
+    estrella = Naves("Estrella de la muerte", 100000, 825984, 1000000)
     caza = Naves("Caza TIE", 10, 1, 1)
     xwing = Naves("X-Wing", 16, 1, 2)
     destructor = Naves("Destructor Estelar", 1600, 37000, 40000)
@@ -21,7 +21,8 @@ if __name__ == "__main__":
     flota.listar(lanzadera.dict())
     flota.listar(reptador.dict())
 
-    print(flota.mayor_pasajeros(flota.naves))
+
+    print(flota.seis_pasajeros(flota.naves))
 
 
 
