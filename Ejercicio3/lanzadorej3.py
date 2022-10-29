@@ -1,0 +1,23 @@
+from Ejercicio3 import Ejercito, Naves
+
+def ejercicio3():
+    #Creamos las naves como objetos de la clase Naves
+    halcon = Naves("Halcon milenario", 34, 4, 10)
+    estrella = Naves("Estrella de la muerte", 100000, 825984, 1000000)
+    caza = Naves("Caza TIE", 10, 1, 1)
+    xwing = Naves("X-Wing", 16, 1, 2)
+    destructor = Naves("Destructor Estelar", 1600, 37000, 40000)
+    at = Naves("AT-AT", 30, 5, 5)
+    lanzadera = Naves("Lanzadera Imperial", 20, 3, 5)
+    reptador = Naves("Reptador de las arenas", 40, 50, 50)
+
+    #Enlistamos las naves como lista de diccionarios en un objeto de la clase 
+    flota = Ejercito()
+    flota.listar(halcon.dict())
+    flota.listar(estrella.dict())
+    flota.listar(caza.dict())
+    flota.listar(xwing.dict())
+    flota.listar(destructor.dict())
+    flota.listar(at.dict())
+    flota.listar(lanzadera.dict())
+    flota.listar(reptador.dict())
