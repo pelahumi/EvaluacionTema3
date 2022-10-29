@@ -1,7 +1,7 @@
-from Ejercicio3 import Ejercito, Naves
+from lanzadorej3 import ejercicio3
 
 if __name__ == "__main__":
-    pass
+    ejercicio3()
 
     
 
