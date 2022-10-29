@@ -23,13 +23,13 @@ def torres_hanoi(discos, torre1, torre2, torre3):
     if discos == 1:
         print(torre1.en_cima(), "va a la ",torre3.nombre)
         torre1.desapilar()
-        torre2.apilar(torre1.en_cima())
+        torre3.apilar(torre1.en_cima())
         return
-    else:
-        torres_hanoi(discos - 1, torre1, torre3, torre2)
-        torres_hanoi(discos - 1, torre2, torre3, torre1)
+    torres_hanoi(discos - 1, torre1, torre3, torre2)
+    torres_hanoi(discos - 1, torre2, torre3, torre1)
 
-torres_hanoi(3, hanoi1, hanoi2, hanoi3)
+torres_hanoi(64, hanoi1, hanoi2, hanoi3)
+
 
 
 
