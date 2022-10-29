@@ -54,7 +54,13 @@ class Ejercito():
         max_pasaj = pasajeros[:5]
         return max_pasaj
         
-                    
+    def mayor_tripulacion(self, lista):
+        tripulacion = []
+        for i in lista:
+            tripulacion.append(i["Tripulacion"])
+        sol = max(tripulacion)
+        return sol
+    
 
 
         
