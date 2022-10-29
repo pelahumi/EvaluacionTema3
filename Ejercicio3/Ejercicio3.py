@@ -44,14 +44,11 @@ class Ejercito():
         for i in lista:
             if i["Nombre"] == "Halcon milenario":
                 naves.append(i)
-            else:
-                print("No se ha encontrado el Halcon milenario")
             
         for i in lista:
             if i["Nombre"] == "Estrella de la muerte":
                 naves.append(i)
-            else:
-                print("No se ha encontrado la Estrella de la muerte")
+                
         return naves
     
     def mayor_pasajeros(self, lista):
