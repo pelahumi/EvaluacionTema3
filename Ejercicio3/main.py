@@ -22,7 +22,7 @@ if __name__ == "__main__":
     flota.listar(reptador.dict())
 
 
-    print(flota.mayor_y_menor(flota.naves))
+    print(flota.mayor_pasajeros(flota.naves))
 
 
 
