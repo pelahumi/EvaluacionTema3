@@ -21,3 +21,35 @@ def ejercicio3():
     flota.listar(at.dict())
     flota.listar(lanzadera.dict())
     flota.listar(reptador.dict())
+
+    #Apartado 1:
+    print("Listado ordenado por nombre de manera ascendente y por longitud de manera descendente")
+    print(flota.ordenar_nombres(flota.naves))
+    print(flota.ordenar_largo(flota.naves))
+
+    #Apartado 2:
+    print("Información Halcón Milenario y de la Estrella de la Muerte: ")
+    print(flota.halcon_estrella(flota.naves))
+
+    #Apartado3:
+    print("5 naves con mayor capacidad: ")
+    print(flota.mayor_pasajeros(flota.naves))
+
+    #Apartado 4:
+    print("Nave con mayor tripulación: ")
+    print(flota.mayor_tripulacion(flota.naves))
+
+    #Apartado 5:
+    print("Hay alguna nave que empiece por AT: ")
+    print(flota.at(flota.naves))
+
+    #Apartado 6:
+    print("Naves que pueden llevar 6 o más pasajeros: ")
+    print(flota.seis_pasajeros(flota.naves))
+
+    #Apartado 7:
+    print("Inforamción de la nave más pequeña y de la más grande: ")
+    print(flota.mayor_y_menor(flota.naves))
+
+
+
