@@ -80,8 +80,21 @@ class Ejercito():
                 pass
         return nave
     
-    def mayor(self, lista):
+    def mayor_y_menor(self, lista):
+        largo = []
+        for i in lista:
+            largo.append(i["Largo"])
+        for i in lista:
+            if i["Largo"] == max(largo):
+                mayor = i
+            elif i["Largo"] == min(largo):
+                menor = i
+            else:
+                pass
+        return mayor, menor
         
+
+
 
 
         
