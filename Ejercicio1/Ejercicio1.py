@@ -18,17 +18,17 @@ for i in range(long):
 
 #Ahora creamos el algoritmo que resolvera el problema
 
-def torres_hanoi(discos, torre1, torre2, torre3):
+def torres_hanoi(discos, origen, auxiliar, destino):
 
     if discos == 1:
-        print(torre1.en_cima(), "va a la ",torre3.nombre)
-        torre1.desapilar()
-        torre3.apilar(torre1.en_cima())
+        print(origen.en_cima(), "va a la ",destino.nombre)
+        origen.desapilar()
+        destino.apilar(origen.en_cima())
         return
-    torres_hanoi(discos - 1, torre1, torre3, torre2)
-    torres_hanoi(discos - 1, torre2, torre3, torre1)
+    torres_hanoi(discos - 1, origen, destino, auxiliar)
+    torres_hanoi(discos - 1, auxiliar, destino, origen)
 
-torres_hanoi(64, hanoi1, hanoi2, hanoi3)
+torres_hanoi(3, hanoi1, hanoi2, hanoi3)
 
 
 

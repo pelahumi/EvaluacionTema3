@@ -105,24 +105,3 @@ class Ejercito():
             else:
                 pass
         return mayor, menor
-        
-
-
-
-
-        
-       
-
-
-
-        
-
-
-        
-    
-
-
-
-
-
-
