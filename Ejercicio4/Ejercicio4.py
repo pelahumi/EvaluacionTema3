@@ -42,7 +42,7 @@ def eliminar(polinomio, termino):
 def existe(polinomio, termino):
     pol = polinomio.termino_mayor
     while pol is not None:
-        termino_pol = pol.imfo.termino
+        termino_pol = pol.info.termino
         if termino_pol == termino:
             return pol.info.valor
         elif termino_pol is None:
