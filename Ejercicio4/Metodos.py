@@ -46,3 +46,4 @@ def mostrar(polinomio):
             pol += signo + str(aux.info.valor) + "x^" + str(aux.info.termino)
             aux = aux.sig
     return pol
+    
