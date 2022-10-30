@@ -1,4 +1,4 @@
-from Ejercicio3 import Ejercito, Naves
+from ejercicio3 import Ejercito, Naves
 
 def ejercicio3():
     #Creamos las naves como objetos de la clase Naves
