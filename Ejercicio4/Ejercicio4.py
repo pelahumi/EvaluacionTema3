@@ -10,3 +10,20 @@ def restar(pol1, pol2):
         if total != 0:
             agregar_termino(aux, i, total)
     return aux
+
+def dividir(pol1, pol2):
+    aux = Polinomio()
+    poli1 = pol1.termino_mayor
+    while poli1 is not None:
+        poli2 = pol2.termino_mayor
+        while poli2 is not None:
+            termino = poli1.info.termino - poli2.info.termino
+            valor =  poli1.info.valor // poli2.info.valor
+            if obtener_valor(aux, termino) != 0:
+                valor += obtener_valor(aux, termino)
+                modificar_termino(aux, termino, valor)
+            else:
+                agregar_termino(aux, termino, valor)
+            poli2 = poli2.sig
+        poli1 = poli1.sig
+    return aux
