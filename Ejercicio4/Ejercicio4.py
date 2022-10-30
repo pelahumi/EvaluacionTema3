@@ -38,4 +38,14 @@ def eliminar(polinomio, termino):
             return
         else:
             pol = pol.sig
-            
+
+def existe(polinomio, termino):
+    pol = polinomio.termino_mayor
+    while pol is not None:
+        termino_pol = pol.imfo.termino
+        if termino_pol == termino:
+            return pol.info.valor
+        elif termino_pol is None:
+            return False
+        else:
+            pol = pol.sig     
