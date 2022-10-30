@@ -27,3 +27,15 @@ def dividir(pol1, pol2):
             poli2 = poli2.sig
         poli1 = poli1.sig
     return aux
+
+def eliminar(polinomio, termino):
+    pol = polinomio.termino_mayor
+    while pol is not None:
+        termino_pol = pol.info.termino
+        if termino_pol == termino:
+            pol.info.valor = 0
+            print("Se elimino el término")
+            return
+        else:
+            pol = pol.sig
+            
