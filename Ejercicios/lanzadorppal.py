@@ -1,10 +1,11 @@
 from Ejercicio3.lanzadorej3 import ejercicio3
 from Ejercicio4.lanzadorej4 import ejercicio4
 from Ejercicio5.lanzadorej5 import ejercicio5
+from helpers import limpiar_pantalla
 
 def lanzadorppal():
      while True:
-        helpers.limpiar_pantalla()
+        limpiar_pantalla()
         print("========================") 
         print(" BIENVENIDO AL MENÚr ") 
         print("========================") 
@@ -17,6 +18,7 @@ def lanzadorppal():
         print("========================")
 
         opcion = input("> ")
+        limpiar_pantalla()
 
         if opcion == 1:
             print("Torres de Hanoi...\n")
@@ -38,3 +40,6 @@ def lanzadorppal():
         
         if opcion == 6:
             print("Cerrando el menú...")
+            break
+
+        input("\nPresiona ENTER para continuar...")
