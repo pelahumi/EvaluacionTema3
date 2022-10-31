@@ -8,7 +8,7 @@ hanoi3 = Pila("Torre 3")
 
 #Creamos una lista con 64 elementos 
 elementos = []
-for i in range (1,65):
+for i in range (1,4):
     elementos.append(i)
 
 #Los apilamos en la primera torre
