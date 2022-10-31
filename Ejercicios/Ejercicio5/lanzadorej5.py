@@ -1,4 +1,4 @@
-from Ejercicio5.ejercicio5 import Cifrado
+from Ejercicios.Ejercicio5.ejercicio5 import Cifrado
 
 def ejercicio5():
     mensaje = Cifrado()
@@ -10,4 +10,3 @@ def ejercicio5():
     #Desciframos el mensaje
     print(mensaje.descifrar())
 
-ejercicio5()

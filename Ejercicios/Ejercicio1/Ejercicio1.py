@@ -1,4 +1,4 @@
-from Ejercicio1.Pila import Pila, NodoPila
+from Ejercicios.Ejercicio1.Pila import Pila, NodoPila
 
 #Creamos las tres torres de hanoi como objetos pila
 
@@ -32,8 +32,6 @@ def mover(origen, destino):
 
 def main():
     torres_hanoi(3, hanoi1, hanoi2, hanoi3)
-
-main()
 
 
 

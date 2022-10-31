@@ -1,5 +1,5 @@
 #Importamos los ficheros que necesitaremos
-from Ejercicio4.Metodos import *
+from Ejercicios.Ejercicio4.Metodos import *
 
 
 def restar(pol1, pol2):

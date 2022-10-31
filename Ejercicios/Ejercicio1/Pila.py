@@ -1,6 +1,3 @@
-from distutils.log import info
-
-
 class NodoPila():
     def __init__(self, info=None, sig= None):
         self.info = info

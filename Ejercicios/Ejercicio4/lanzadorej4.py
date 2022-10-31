@@ -1,4 +1,4 @@
-from Ejercicio4.ejercicio4 import *
+from Ejercicios.Ejercicio4.ejercicio4 import *
 
 def ejercicio4():
 

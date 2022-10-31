@@ -1,4 +1,4 @@
-from Ejercicio2.ejercicio2 import matriz, determinante
+from Ejercicios.Ejercicio2.ejercicio2 import matriz, determinante
 
 def ejercicio2():
     print("Creamos la matriz:\n")

@@ -1,5 +1,5 @@
 #Importamos las clases de Polinomio.py
-from Polinomio import Nodo, DatoPolinomio, Polinomio
+from Ejercicios.Ejercicio4.Polinomio import Nodo, DatoPolinomio, Polinomio
 
 #Creamos las funciones
 
