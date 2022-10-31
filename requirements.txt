@@ -1,2 +1,4 @@
 random
 hashlib
+os
+platform
