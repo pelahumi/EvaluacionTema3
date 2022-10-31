@@ -5,3 +5,4 @@ def ejercicio2():
     print(matriz)
     print("\n")
     print("Este es el determinante: {}".format(determinante()))
+    
