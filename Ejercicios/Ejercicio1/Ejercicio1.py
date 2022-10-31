@@ -25,9 +25,6 @@ def torres_hanoi(discos, origen, auxiliar, destino):
         mover(origen, destino)
         torres_hanoi(discos - 1, destino, origen, auxiliar)
 
-    movimientos = 2**discos - 1 
-    return destino
-
 def mover(origen, destino):
     print(origen.cima.info, "va a la ",destino.nombre)
     origen.desapilar()
