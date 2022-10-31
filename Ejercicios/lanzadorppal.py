@@ -47,3 +47,5 @@ def lanzadorppal():
             break
 
         input("\nPresiona ENTER para continuar...")
+
+lanzadorppal()

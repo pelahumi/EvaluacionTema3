@@ -1,4 +1,4 @@
-from ejercicio5 import Cifrado
+from Ejercicio5.ejercicio5 import Cifrado
 
 def ejercicio5():
     mensaje = Cifrado()
