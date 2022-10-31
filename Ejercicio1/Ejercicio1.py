@@ -20,17 +20,25 @@ for i in range(long):
 
 def torres_hanoi(discos, origen, auxiliar, destino):
 
-    if discos == 1:
-        x = origen.cima.info
-        print(origen.en_cima(), "va a la ",destino.nombre)
-        origen.desapilar()
-        destino.apilar(x)
-        return destino
-    torres_hanoi(discos - 1, origen, destino, auxiliar)
-    torres_hanoi(discos - 1, auxiliar, destino, origen)
+    if discos >= 1:
+        torres_hanoi(discos - 1, origen, destino, auxiliar)
+        mover(origen, destino)
+        torres_hanoi(discos - 1, auxiliar, destino, origen)
+
+    movimientos = 2**discos - 1 
+    return destino
+
+def mover(origen, destino):
+    print(origen.en_cima(), "va a la ",destino.nombre)
+    origen.desapilar()
+    destino.apilar(origen.en_cima())
+
+def main():
+    torres_hanoi(3, hanoi1, hanoi2, hanoi3).barrido()
 
 
 
+main()
 
 
 

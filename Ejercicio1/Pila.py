@@ -17,9 +17,12 @@ class Pila():
         self.tamanio += 1
     
     def desapilar(self):
-        x = self.cima.info
-        self.cima = self.cima.sig
-        self.tamanio -= 1
+        if self.cima is not None:
+            x = self.cima.info
+            self.cima = self.cima.sig
+            self.tamanio -= 1
+        else:
+            return None
         return x
     
     def tamanio(self):
