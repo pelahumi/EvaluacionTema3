@@ -1,3 +1,4 @@
+from Ejercicio1.lanzadorej1 import ejercicio1
 from Ejercicio2.lanzadorej2 import ejercicio2
 from Ejercicio3.lanzadorej3 import ejercicio3
 from Ejercicio4.lanzadorej4 import ejercicio4
@@ -23,6 +24,7 @@ def lanzadorppal():
 
         if opcion == 1:
             print("Torres de Hanoi...\n")
+            ejercicio1()
 
         if opcion == 2:
             print("Cálculo de determinante...")
