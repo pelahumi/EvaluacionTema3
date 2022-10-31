@@ -21,15 +21,15 @@ for i in range(long):
 def torres_hanoi(discos, origen, auxiliar, destino):
 
     if discos == 1:
+        x = origen.cima.info
         print(origen.en_cima(), "va a la ",destino.nombre)
-        print(origen.en_cima())
         origen.desapilar()
-        destino.apilar(origen.en_cima())
-
-        return
+        destino.apilar(x)
+        return destino
     torres_hanoi(discos - 1, origen, destino, auxiliar)
     torres_hanoi(discos - 1, auxiliar, destino, origen)
-    torres_hanoi(discos - 1, destino, origen, auxiliar)
+
+
 
 
 

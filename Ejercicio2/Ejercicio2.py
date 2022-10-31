@@ -14,32 +14,27 @@ def matriz():
 #Creamos una funcion para resolver el determinante
 
 def determinante(matriz):
-    dp = 1
-    ds = 1
-    s1 = 1
-    s2 = 1
-    r1 = 1
-    r2 = 1
-    for i in range(len(matriz)):
-        for j in range(len(matriz)):
-            if i == j:
-                dp = dp * matriz[i][j]
-            elif (i - j == -1) or (i - j == 2):
-                s1 = s1 * matriz[i][j]
-            elif (i - j == 1) or (i - j == -2):
-                s2 = s2 * matriz[i][j]
-            elif (i - j == 2) or (i==1 and j==1) or (i - j == -2):
-                ds = ds * matriz[i][j]
-            elif (i == 0 and j == 1) or (i == 1 and j == 0) or (i == 2 and j == 2):
-                r1 = r1 * matriz[i][j]
-            elif (i == 0 and j == 0) or (i == 1 and j == 2) or (i == 2 and j ==1):
-                r2 = r2 * matriz[i][j]
-    solucion = dp + s1 + s2 - ds - r1- r2
-    return solucion
+    for i in range(len(matriz) * 2):
+        if i == 0:
+            dp = matriz[0][0] * matriz[1][1] * matriz[2][2] #Calculamos la diagonal principal
+        elif i == 1:
+            ds = matriz[0][2] * matriz[1][1] * matriz[2][0] #Calculamos la diagonal secundaria
+        elif i == 2:
+            s1 = matriz[0][1] * matriz[1][2] * matriz[2][0]
+        elif i == 3:
+            s2 = matriz[1][0] * matriz[2][1] * matriz[0][2]
+        elif i == 4:
+            r1 = matriz[1][2] * matriz[2][1] * matriz[0][0]
+        else:
+            r2 = matriz[0][1] * matriz[1][0] * matriz[2][2]
+    
+    suma = dp + s1 + s2
+    resta = ds + r1 +r2
+    det = suma - resta
+        
+    return det
 
-matriz = [[1, 2, 3],[2,3,5],[1,4,7]]
-print(matriz)
-print(determinante(matriz))
+
             
 
 
