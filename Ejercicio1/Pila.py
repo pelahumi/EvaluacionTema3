@@ -7,7 +7,7 @@ class NodoPila():
         self.sig = sig
 
 class Pila():
-    def __init__(self, nombre):
+    def __init__(self, nombre=None):
         self.nombre = nombre
         self.cima = None
         self.tamanio = 0

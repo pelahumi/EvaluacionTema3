@@ -22,13 +22,17 @@ def torres_hanoi(discos, origen, auxiliar, destino):
 
     if discos == 1:
         print(origen.en_cima(), "va a la ",destino.nombre)
+        print(origen.en_cima())
         origen.desapilar()
         destino.apilar(origen.en_cima())
+
         return
     torres_hanoi(discos - 1, origen, destino, auxiliar)
     torres_hanoi(discos - 1, auxiliar, destino, origen)
+    torres_hanoi(discos - 1, destino, origen, auxiliar)
 
-torres_hanoi(3, hanoi1, hanoi2, hanoi3)
+
+
 
 
 
